@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+<meta charset="UTF-8">
+<title>系统登陆</title>
+
+<!--图标样式-->
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script  src="js/login/log_req_main.js"></script>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css'>
+
+<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body style="background:url(images/loginBackground.jpg)">
+
+	<p><h1 id="headTitle">湖南中医药大学图书馆系统</h1></p>
+	<div class="container" id="container">
+		<div class="form-container sign-up-container">
+			<form id="reg_form">
+				<h1>注册</h1>
+				<div class="social-container">
+					<a href="#" class="social"><i class="fab fa-qq"></i></a>
+					<a href="#" class="social"><i class="fab fa-weixin"></i></a>
+					<a href="#" class="social"><i class="fab fa-weibo"></i></a>
+				</div>
+				<span>第三方账号注册</span>
+				<input type="text" placeholder="用户名" id="reg_username" />
+				<input type="text" placeholder="邮箱" id="reg_email"/>
+				<input type="password" placeholder="密码" id="reg_password" />
+				<p id="reg_id_tips">&nbsp;</p>
+				<button type="button" id="register_btn">注册</button>
+			</form>
+		</div>
+		<div class="form-container sign-in-container">
+			<form  id="log_form">
+				<h1>登录</h1>
+				<div class="social-container">
+					<a href="#" class="social"><i class="fab fa-qq"></i></a>
+					<a href="#" class="social"><i class="fab fa-weixin"></i></a>
+					<a href="#" class="social"><i class="fab fa-weibo"></i></a>
+				</div>
+				<span>第三方账号登录</span>
+				<input type="text" placeholder="用户名或学号" name="username" id="log_username" />
+				<p id="log_id_tips">&nbsp</p>
+				<input type="password" placeholder="密码" name="textfield2" id="log_password" />
+				<a href="#">忘记密码？</a>
+				<button type="button" id="login_btn">登录</button>
+			</form>
+		</div>
+		<div class="overlay-container">
+			<div class="overlay">
+				<div class="overlay-panel overlay-left">
+					<h1>欢迎回来！</h1>
+					<p>请您先登录个人信息，再进行操作。</p>
+					<button class="ghost" id="signIn">登录</button>
+				</div>
+				<div class="overlay-panel overlay-right">
+					<h1>你好同学！</h1>
+					<p>请您先点击下面按钮完成个人注册。</p>
+					<button class="ghost" id="signUp">注册</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+	</footer>
+	<script  src="js1/index.js"></script>
+	<script>
+	
+	</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+
+
+
+<web-app>
+	
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>imagesave</servlet-name>
+  	<display-name>imagesave</display-name>
+  	<description></description>
+  	<servlet-class>com.servlet.imagesave</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>loginjg</servlet-name>
+  	<display-name>loginjg</display-name>
+  	<description></description>
+  	<servlet-class>com.servlet.loginjg</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>test</servlet-name>
+  	<display-name>test</display-name>
+  	<description></description>
+  	<servlet-class>com.upload.test</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>register</servlet-name>
+  	<display-name>register</display-name>
+  	<description></description>
+  	<servlet-class>com.servlet.register</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>blog_userinfo</servlet-name>
+  	<display-name>blog_userinfo</display-name>
+  	<description></description>
+  	<servlet-class>com.servlet.blog_userinfo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>imagesave</servlet-name>
+  	<url-pattern>/imagesave</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>loginjg</servlet-name>
+  	<url-pattern>/loginjg</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>test</servlet-name>
+  	<url-pattern>/test</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>register</servlet-name>
+  	<url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>blog_userinfo</servlet-name>
+  	<url-pattern>/blog_userinfo</url-pattern>
+  </servlet-mapping>
+</web-app>

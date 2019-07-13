@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- mail_compose.html /3.x [XR&CO'2014], Mon, 16 Oct 2017 07:29:47 GMT -->
+<head>
+
+ <script src="js/jquery.min63b9.js?v=2.1.4"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title> 个人空间</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="favicon.ico"> <link href="css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="css/font-awesome93e3.css?v=4.4.0" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/plugins/summernote/summernote.css" rel="stylesheet">
+    <link href="css/plugins/summernote/summernote-bs3.css" rel="stylesheet">
+    <link href="css/style862f.css?v=4.1.0" rel="stylesheet">
+
+</head>
+<style>
+    .modal-backdrop {
+filter: alpha(opacity=0)!important;
+opacity: 0!important;
+}
+</style>
+<body id="bodynone">
+                    
+    <div class="wrapper wrapper-content">
+        <div class="row">
+            <div class="col-sm-12 animated fadeInRight">
+                <div class="mail-box-header">
+                    <h2>
+                   写博客
+                </h2>
+                </div>
+                <div class="mail-box">
+
+
+                    <div class="mail-body">
+
+                        <form class="form-horizontal" method="get">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">类型：</label>
+
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" value="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label" >标题：</label>
+
+                                <div class="col-sm-10">
+                                    <input  id="title" type="text" class="form-control" value="">
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+
+                    <div class="mail-text h-200">
+
+                        <div class="summernote" id="summernote">
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="mail-body text-right tooltip-demo">
+                        <a  class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Send" id="save_btn"><i class="fa fa-reply"></i> 保存</a>
+                        <a href="mailbox.html" class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="top" title="Discard email"><i class="fa fa-times"></i> 放弃</a>
+                        <a href="mailbox.html" class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="top" title="Move to draft folder"><i class="fa fa-pencil"></i> 存为草稿</a>
+                    </div>
+                    <div class="clearfix"></div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 全局js -->
+   
+    <script src="js/bootstrap.min14ed.js?v=3.3.6"></script>
+
+
+
+    <!-- 自定义js -->
+    <script src="js/contente209.js?v=swS1aa.0.0"></script>
+
+
+    <!-- iCheck -->
+    <script src="js/plugins/iCheck/icheck.min.js"></script>
+
+    <!-- SUMMERNOTE -->
+    
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.js"></script>
+    <script src="js/plugins/summernote/summernote-zh-CN.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green',
+            });
+        });
+        var edit = function () {
+            $('.click2edit').summernote({
+                focus: true
+            });
+        };
+        var save = function () {
+            var aHTML = $('.click2edit').code(); //save HTML If you need(aHTML: array).
+            $('.click2edit').destroy();
+        };
+        
+        
+    </script>
+  <script  src="js/dist/cos-js-sdk-v5.min.js"></script>
+<script src="js/blog/snoteup.js?c=aqsaaa"></script>
+    
+    
+
+</body>
+
+
+<!-- mail_compose.html /3.x [XR&CO'2014], Mon, 16 Oct 2017 07:29:50 GMT -->
+</html>

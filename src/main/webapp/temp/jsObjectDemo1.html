@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+	<script type="text/javascript">
+	
+		function createObjectDemo(){
+			 var obj = {
+					 	name:"张三",
+					 	age:18,
+						showInfo:function(){
+						 		alert("showInfo")
+						 }
+			 			};//创建一个js对象，有name,age属性和showInfo方法
+			//使用对象:对象名.属性名  对象名.方法名
+			alert(obj.name);//张三
+			obj.showInfo();
+			
+			//对象数组:
+			var objArray = [{name:"张三",age:18},{name:"张三1",age:19},{name:"张三2",age:20}];
+			
+			
+			//遍历数组
+			for(var i = 0;i<objArray.length;i++){
+				//取出数组元素
+				var obj = objArray[i];
+				//访问数组元素对象的属性值
+				alert("元素"+i+"的name属性值为:"+obj.name);
+			}
+			
+		}
+	</script>
+</head>
+<body>
+		<button onclick="createObjectDemo()">测试JS对象</button>
+</body>
+</html>
